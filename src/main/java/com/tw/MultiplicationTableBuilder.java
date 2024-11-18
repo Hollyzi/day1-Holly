@@ -12,7 +12,11 @@ public class MultiplicationTableBuilder {
 
     public String generateMultiplicationTable(int start, int end) {
         String multiplicationTable="";
-
+        if(checkValidation(start,end)){
+            multiplicationTable=printMultipllicationTable(start,end);
+        }else{
+            multiplicationTable=null;
+        };
         return multiplicationTable;
     }
     public boolean checkValidation(int start,int end){

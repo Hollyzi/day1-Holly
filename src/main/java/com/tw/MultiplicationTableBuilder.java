@@ -29,6 +29,15 @@ public class MultiplicationTableBuilder {
         return isRangeOfScope;
     }
 
+    public String printMultipllicationTable(int start,int end){
+        String multiplicationTable="";
+        String line="";
+        for(int i=start;i<=end;i++){
+            line=generateLine(start,i);
+            multiplicationTable=generateTable(multiplicationTable,line);
+        }
+        return multiplicationTable;
+    }
 
     public String generateLine(int start,int end){
         String line="";

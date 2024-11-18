@@ -43,6 +43,9 @@ public class MultiplicationTableBuilder {
         return line;
     }
 
+    public String generateTable(String multiplicationTable,String line){
+        return multiplicationTable+line+'\n';
+    }
 
 
 

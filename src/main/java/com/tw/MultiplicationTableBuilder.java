@@ -21,6 +21,11 @@ public class MultiplicationTableBuilder {
         boolean isSmallerThanEnd=start<=end;
         return  isSmallerThanEnd;
     }
+    public boolean checkIsRangeOfScope(int number){
+        boolean isRangeOfScope=number>1&&number<=1000;
+        return isRangeOfScope;
+    }
+
 
 
 

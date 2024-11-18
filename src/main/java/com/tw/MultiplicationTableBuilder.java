@@ -30,6 +30,20 @@ public class MultiplicationTableBuilder {
     }
 
 
+    public String generateLine(int start,int end){
+        String line="";
+        for(int i=start;i<=end;i++){
+            int result=i*end;
+            if(i!=end){
+                line=line+Integer.toString(i)+'*'+ Integer.toString(end)+'='+ Integer.toString(result)+" ";
+            }else{
+                line=line+Integer.toString(i)+'*'+ Integer.toString(end)+'='+ Integer.toString(result);
+            }
+        }
+        return line;
+    }
+
+
 
 
 

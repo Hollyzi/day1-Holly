@@ -15,7 +15,10 @@ public class MultiplicationTableBuilder {
 
         return multiplicationTable;
     }
-
+    public boolean checkValidation(int start,int end){
+        boolean validation=checkIsSmallerThanEnd(start,end)&&checkIsRangeOfScope(start)&&checkIsRangeOfScope(end);
+        return validation;
+    }
 
     public boolean checkIsSmallerThanEnd(int start,int end){
         boolean isSmallerThanEnd=start<=end;
@@ -25,6 +28,9 @@ public class MultiplicationTableBuilder {
         boolean isRangeOfScope=number>1&&number<=1000;
         return isRangeOfScope;
     }
+
+
+
 
 
 
